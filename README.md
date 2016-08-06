@@ -1,8 +1,9 @@
 # PCAphp
 Principal Component Analysis PHP
 
-Example
+##Example
 
+```
 include( "pca.php" );
 
 $points = [
@@ -15,3 +16,4 @@ $p->changeDimension( 1 );
 $p->applayingPca();
 print_r( $p->getNewData() );
 print_r( $p->getSimilarity() );
+```
