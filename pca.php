@@ -1,6 +1,6 @@
 <?php namespace PCA;
 
-include( "PCA/Math/jacobiEigenvalueAlgorithm.php" );
+include( "Math/jacobiEigenvalueAlgorithm.php" );
 
 /**
  * Class for calculate Principal Component Analysis
