@@ -161,13 +161,9 @@ class PCA
             for ($i = 0; $i < $m; $i++) { //column
 
                 $sh = substr($a[$i][$j], 0, self::PRINT_LENGTH);
-                $l = self::PRINT_LENGTH - strlen($sh);
-                $ws = "";
+                $sh = str_pad($sh, self::PRINT_LENGTH, " ", STR_PAD_LEFT);
 
-                for ($k = 0; $k < $l; $k++) {
-                    $ws .= " ";
-                }
-                echo $ws . $sh . (($i < $m - 1) ? " | " : "");
+                echo $sh . (($i < $m - 1) ? " | " : "");
             }
             echo PHP_EOL;
         }
